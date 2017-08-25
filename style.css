@@ -1,0 +1,30 @@
+.container {
+  width: 800px;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.square {
+  width: 20px;
+  padding-bottom: 20px;
+  background-color: white;
+  border: 1px solid #BBBBBB;
+  float: left;
+}
+
+.paletteContainer {
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.palette {
+  border: 1px solid #BBBBBB;
+  border-radius: 100%;
+  width: 25px;
+  padding-bottom: 25px;
+  margin: 10px 1px 10px 1px;
+  float: left;
+  display: inline-block;
+}
