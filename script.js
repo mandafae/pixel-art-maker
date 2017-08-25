@@ -1,4 +1,4 @@
-paintColor = '#001F3F';
+paintColor = '#FFFFFF';
 
 window.onload = function(){
 

@@ -1,8 +1,19 @@
+body {
+  background-color: #F4F6F6;
+}
+
 .container {
-  width: 800px;
-  margin-top: 50px;
+  width: 793px;
+  margin-top: 25px;
   margin-left: auto;
   margin-right: auto;
+  padding: 1px 10px 1px 10px;
+  border: 2px solid #633974;
+  border-radius: 5px;
+  background-color: #EBDEF0;
+  overflow: hidden;
+  height: 1%;
+  text-align: center;
 }
 
 .square {
@@ -14,7 +25,7 @@
 }
 
 .paletteContainer {
-  width: 800px;
+  width: 785px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -27,4 +38,9 @@
   margin: 10px 1px 10px 1px;
   float: left;
   display: inline-block;
+}
+
+h1 {
+  font-family: arial;
+  margin: 5px;
 }
