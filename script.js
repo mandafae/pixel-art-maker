@@ -8,6 +8,7 @@ window.onload = function(){
 
   // Draw the grid
   function drawGrid(paintColor){
+    // let pressed = false;
     for (let i = 0; i < 1008; i++) {
       let square = document.createElement('div');
       square.className = 'square';
@@ -15,9 +16,21 @@ window.onload = function(){
       container.append(square);
       // Add event listener for each square so they can be painted
       square.addEventListener('click', function() {
-        let clickedSquare = document.getElementById(i+1);
-        clickedSquare.style.backgroundColor = window.paintColor;
+        this.style.backgroundColor = window.paintColor;
+        this.style.borderColor = window.paintColor;
       })
+      /* Add event listeners for dragging to paint -- NOT WORKING!
+      square.addEventListener('mousedown', function() {
+        pressed = true;
+      })
+      while (pressed === true) {
+        square.addEventListener('mouseenter', function() {
+          this.style.backgroundColor = window.paintColor;
+        })
+      }
+      square.addEventListener('mouseup', function() {
+        pressed = false;
+      }) */
     }
   }
 
@@ -33,10 +46,10 @@ window.onload = function(){
       circle.style.backgroundColor = colors[i];
       circle.id = colors[i];
       paletteContainer.append(circle);
+
       // Add event listener so palette circles can select paint color
       circle.addEventListener('click', function(){
       window.paintColor = this.id;
-      return paintColor;
       })
     }
   }
